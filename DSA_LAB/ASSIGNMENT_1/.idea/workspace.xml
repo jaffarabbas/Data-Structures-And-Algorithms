@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9d3d4dfb-36aa-42ef-b96f-62d5bbfed6b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASSIGNMENT_1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment_1_fa19bsse0008_jaffar_ababs_dsa_lab.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assScreenShoot/a3_ans.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assScreenShoot/q1.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assScreenShoot/q1_ans.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assScreenShoot/q2.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assScreenShoot/q2_ans.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assScreenShoot/q3.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assScreenShoot/q4.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assScreenShoot/q4_ans.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assScreenShoot/q5.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assScreenShoot/q5_ans.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ASSIGNMENT_1/com/DSA/question_1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ASSIGNMENT_1/com/DSA/question_2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ASSIGNMENT_1/com/DSA/question_3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ASSIGNMENT_1/com/DSA/question_4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ASSIGNMENT_1/com/DSA/question_5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DSA/question_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DSA/question_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DSA/question_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DSA/question_4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DSA/question_5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/~$signment_1_fa19bsse0008_jaffar_ababs_dsa_lab.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/~WRL1939.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dsa_Cracker/q1_reverse_Array.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1iulB1CzrnUmtYm5jmc4CWPveZC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.question_2">
+    <configuration name="question_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.DSA.question_1" />
+      <module name="ASSIGNMENT_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.DSA.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="question_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.DSA.question_2" />
+      <module name="ASSIGNMENT_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.DSA.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="question_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.DSA.question_3" />
+      <module name="ASSIGNMENT_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.DSA.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="question_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.DSA.question_4" />
+      <module name="ASSIGNMENT_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.DSA.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="question_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.DSA.question_5" />
+      <module name="ASSIGNMENT_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.DSA.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.question_1" />
+      <item itemvalue="Application.question_2" />
+      <item itemvalue="Application.question_3" />
+      <item itemvalue="Application.question_4" />
+      <item itemvalue="Application.question_5" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.question_2" />
+        <item itemvalue="Application.question_5" />
+        <item itemvalue="Application.question_4" />
+        <item itemvalue="Application.question_3" />
+        <item itemvalue="Application.question_1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d3d4dfb-36aa-42ef-b96f-62d5bbfed6b4" name="Default Changelist" comment="" />
+      <created>1602765222530</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602765222530</updated>
+      <workItem from="1602765223714" duration="8605000" />
+      <workItem from="1602779110910" duration="2777000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1323" height="345" key="GridCell.Tab.0.bottom" timestamp="1602783852745">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="345" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602783852745" />
+    <state width="1323" height="345" key="GridCell.Tab.0.center" timestamp="1602783852744">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="345" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602783852744" />
+    <state width="1323" height="345" key="GridCell.Tab.0.left" timestamp="1602783852744">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="345" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602783852744" />
+    <state width="1323" height="345" key="GridCell.Tab.0.right" timestamp="1602783852744">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="345" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602783852744" />
+  </component>
+</project>
