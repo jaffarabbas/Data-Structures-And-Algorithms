@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d3d4dfb-36aa-42ef-b96f-62d5bbfed6b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASSIGNMENT_1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment_1_fa19bsse0008_jaffar_ababs_dsa_lab.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assScreenShoot/a3_ans.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assScreenShoot/q1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assScreenShoot/q1_ans.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assScreenShoot/q2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assScreenShoot/q2_ans.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assScreenShoot/q3.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assScreenShoot/q4.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assScreenShoot/q4_ans.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assScreenShoot/q5.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assScreenShoot/q5_ans.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ASSIGNMENT_1/com/DSA/question_1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ASSIGNMENT_1/com/DSA/question_2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ASSIGNMENT_1/com/DSA/question_3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ASSIGNMENT_1/com/DSA/question_4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ASSIGNMENT_1/com/DSA/question_5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DSA/question_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DSA/question_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DSA/question_3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DSA/question_4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DSA/question_5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/~$signment_1_fa19bsse0008_jaffar_ababs_dsa_lab.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/~WRL1939.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dsa_Cracker/q1_reverse_Array.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="9d3d4dfb-36aa-42ef-b96f-62d5bbfed6b4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,19 +97,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.question_1" />
       <item itemvalue="Application.question_2" />
@@ -173,6 +124,7 @@
       <updated>1602765222530</updated>
       <workItem from="1602765223714" duration="8605000" />
       <workItem from="1602779110910" duration="3397000" />
+      <workItem from="1603177188935" duration="89000" />
     </task>
     <servers />
   </component>
@@ -183,6 +135,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1603177275967">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603177275967" />
     <state width="1323" height="334" key="GridCell.Tab.0.bottom" timestamp="1602787735463">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -199,5 +155,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="334" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602787735462" />
+    <state x="274" y="0" key="new project wizard" timestamp="1603177284473">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="274" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1603177284473" />
   </component>
 </project>
