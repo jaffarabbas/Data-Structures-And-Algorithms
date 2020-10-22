@@ -19,7 +19,7 @@ class BinarySerch{
             }
         }
     }
-    int binaryserch(){
+    void binaryserch(){
         Scanner scn = new Scanner(System.in);
         System.out.print("Array length : ");
         int length = scn.nextInt();
@@ -40,10 +40,12 @@ class BinarySerch{
         value = scn.nextInt();
         low = 0;
         high = arr.length-1;
+        boolean flag = false;
         while (low<=high){
             mid=(low+high)/2;
             if(arr[mid] == value){
-                return mid;
+                System.out.println("Value is At : "+mid+" And Value is : "+arr[mid]);
+                flag = true;
             }
             if(arr[mid] < value){//arr 5 = 1 2 3 4 5  ,value = 4, mid = 2 : array index 2 value = 3,value = 4 mid = 2 , ar[mid] = 3 , 3 < 4 ,low = mid + 1 , low = 3  , hig = 5 value at mid is value hense in 3 index is 4
                 low = mid + 1;
@@ -51,12 +53,14 @@ class BinarySerch{
                 high = mid - 1;
             }
         }
-        return -1;
+        if(!flag){
+            System.out.println("Key Not Found !!!!");
+        }
     }
 }
 public class question_1 {
     public static void main(String[] args) {
         BinarySerch object_1 = new BinarySerch();
-        System.out.println(object_1.binaryserch());
+        object_1.binaryserch();
     }
 }
