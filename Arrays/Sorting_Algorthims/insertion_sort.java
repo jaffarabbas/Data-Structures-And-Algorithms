@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 class InsertionSort{
     public void sort(int arr[],int size){
-        int i,j,key,count=0,count2=0;
+        int i,j,key,count=0,count2=0,count3=0;
         for(i=1;i<size;i++){//i=1,arr[1] = 5
             key = arr[i];// key = 5
             j = i-1; // j=1-1 = 0 
@@ -11,10 +11,13 @@ class InsertionSort{
                 j--;//0-1 = -1 flase while loop 
                 count2++;
             }
-            arr[j+1] = key;//-1+1 = 0 , 
             count++;
+            arr[j+1] = key;//-1+1 = 0 , 
+            if(arr[j+1] == key){
+                count3++;
+            }
         }
-     System.out.println("count:i"+count+"\ncountj"+count2);
+        System.out.println("count i : "+count+"\ncount j : "+count2+"\nSwap : "+count3);
     }
 }
 
@@ -23,13 +26,13 @@ class InsertionSort{
 class insertion_sort{
     public static void main(String[] args) {
         InsertionSort sort = new InsertionSort();
-        int arr[] = {5,4,3,2,1};
+        int arr[] = {43,33,12,19,2,24,15,65,45,28};
         for(int num:arr){
             System.out.println("Ansorted arry: "+num);
         }
         sort.sort(arr, arr.length);
         for(int num:arr){
-            System.out.print(num);
+            System.out.print(" "+num);
         }
     }
 }
