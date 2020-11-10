@@ -33,27 +33,27 @@ public class merge_sort {
 //     }
 static void merge(int A[ ] , int start, int mid, int end) {
     //stores the starting position of both parts in temporary variables.
-   int p = start ,q = mid+1;
+   int low = start ,middle = mid+1;
    
    int Arr[] = new int[end-start+1] ;int k=0;
    
    for(int i = start ;i <= end ;i++) {
-       if(p > mid)      //checks if first part comes to an end or not .
-          Arr[ k++ ] = A[ q++] ;
+       if(low > mid)      //checks if first part comes to an end or not .
+          Arr[ k++ ] = A[ middle++] ;
    
-      else if ( q > end)   //checks if second part comes to an end or not
-          Arr[ k++ ] = A[ p++ ];
+      else if ( middle > end)   //checks if second part comes to an end or not
+          Arr[ k++ ] = A[ low++ ];
    
-      else if( A[ p ] < A[ q ])     //checks which part has smaller element.
-         Arr[ k++ ] = A[ p++ ];
+      else if( A[ low ] < A[ middle ])     //checks which part has smaller element.
+         Arr[ k++ ] = A[ low++ ];
    
       else
-         Arr[ k++ ] = A[ q++];
+         Arr[ k++ ] = A[ middle++];
     }
-     for ( p=0 ; p< k ;p ++) {
+     for ( low=0 ; low< k ;low ++) {
       /* Now the real array has elements in sorted manner including both 
            parts.*/
-        A[ start++ ] = Arr[ p ] ;                          
+        A[ start++ ] = Arr[ low ] ;                          
      }
    }
 
