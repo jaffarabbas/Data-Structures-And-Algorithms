@@ -16,8 +16,9 @@ class InsertionSort{
             count++;
             arr[j+1] = key;//-1+1 = 0 , 
             count3++;
-            System.out.println(Arrays.toString(arr));
+      //      System.out.println(Arrays.toString(arr));
         }
+        System.out.println(Arrays.toString(arr));
         System.out.println("count i : "+count+"\ncount j : "+count2+"\nSwap : "+count3);
     }
 }
@@ -27,10 +28,10 @@ class InsertionSort{
 class insertion_sort{
     public static void main(String[] args) {
         InsertionSort sort = new InsertionSort();
-        int arr[] = {5,4,3,2,1};
-        for(int num:arr){
-            System.out.print(" "+num);
-        }
+        int arr[] = {2 ,4 ,6, 8, 3};
+        // for(int num:arr){
+        //     System.out.print(" "+num);
+        // }
         sort.sort(arr, arr.length);
         for(int num:arr){
             System.out.print(" "+num);
