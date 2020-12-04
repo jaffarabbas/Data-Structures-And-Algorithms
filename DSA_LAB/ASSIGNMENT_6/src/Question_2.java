@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class sortingofstack {
+public class Question_2 {
     public static void main(String[] args) {
         Stack<Integer> stack = new Stack<>();
         Stack<Integer> stack2 = new Stack<>();
@@ -10,6 +10,8 @@ public class sortingofstack {
         stack.push(3);
         stack.push(2);
         stack.push(1);
+        System.out.println("Unsorted : ");
+        System.out.println(stack);
         while(!stack.isEmpty()){
             temp = stack.pop();
             while(!stack2.isEmpty() && stack2.peek() > temp){
@@ -17,6 +19,7 @@ public class sortingofstack {
             }
             stack2.push(temp);
         }
+        System.out.println("Sorted : ");
         System.out.println(stack2);
     }
 }

@@ -1,8 +1,6 @@
-
 import java.util.Scanner;
 import java.util.Stack;
-
-class deletefromstack{
+public class Question_1 {
     public static void main(String[] args) {
         Stack<Integer> s1 = new Stack<>();
         Stack<Integer> s2 = new Stack<>();
@@ -30,12 +28,16 @@ class deletefromstack{
                 flag = true;
                 break;
             }else{
-                s2.push(temp);
+               s2.push(temp);
             }
             count++;
         }
+        while(!s2.isEmpty()){
+            s1.push(s2.pop());
+        }
         if(flag){
             System.out.println(temp+" at : "+size+" in count : "+count);
+            System.out.println(s1);
         }
     }
 }
