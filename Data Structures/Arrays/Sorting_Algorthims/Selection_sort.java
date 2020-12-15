@@ -33,7 +33,7 @@ class Slection{
 public class Selection_sort {
     public static void main(String[] args) {
         Slection sort = new Slection();
-        int arr[] =  {5,6,1,1,8,9,3,5};
+        int arr[] =  {5 ,3, 8, 9, 1, 7, 0,2 ,6, 4};
         for(int num:arr){
             System.out.println("Ansorted arry: "+num);
         }

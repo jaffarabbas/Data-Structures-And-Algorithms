@@ -28,7 +28,7 @@ class InsertionSort{
 class insertion_sort{
     public static void main(String[] args) {
         InsertionSort sort = new InsertionSort();
-        int arr[] = {2 ,4 ,6, 8, 3};
+        int arr[] =  {5 ,3, 8, 9, 1, 7, 0,2 ,6, 4};
         // for(int num:arr){
         //     System.out.print(" "+num);
         // }
