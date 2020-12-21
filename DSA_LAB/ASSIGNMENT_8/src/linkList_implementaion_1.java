@@ -51,6 +51,8 @@ class LinkedList{
         }
         last.node = newNode;
     }
+    //Delete Node
+    
 }
 
 public class linkList_implementaion_1 {
