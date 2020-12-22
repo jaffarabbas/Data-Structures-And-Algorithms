@@ -1,3 +1,4 @@
+import java.util.List;
 
 class LinkedList{
     public Node head;
@@ -19,6 +20,50 @@ class LinkedList{
         }
         System.out.println(" ]");
     }
+    //List size
+    public int ListSize(){
+            Node value = head;
+            int count=0;
+            while (value!=null){
+                value = value.node;
+                count++;
+            }
+            return (count);
+    }
+    //isEmpty or not
+    public boolean isEmpty(){
+        return (ListSize()<=0);
+    }
+    //isFull
+    public boolean isFull(){
+        return (ListSize()>0);
+    }
+    //Peek
+    public int ListPeek(){
+        if(!isEmpty()){
+            return head.data;
+        }else{
+            return 0;
+        }
+    }
+    //Peek First
+    public int ListPeekFirst(){
+        if(!isEmpty()){
+            return head.data;
+        }else{
+            return 0;
+        }
+    }
+    //Peek Last
+    public int ListPeekLast(){
+        Node value = head;
+        Node lastValue = head.node;
+        while (lastValue!=null){
+            value = value.node;
+            lastValue = lastValue.node;
+        }
+        return value.data;
+    }
     //Method for Insertion at first index
     public void InsertAtBeginning(int newData){
         //create new Node
@@ -27,17 +72,28 @@ class LinkedList{
         head = newNode;
     }
     //Method to print in any insertion
-    public void InsertList(Node previous,int newData){
-        if(previous == null){
-            System.out.println("Element is null cannot push in the list");
-            return;
+    public void InsertList(int index,int newData){
+        if(index <= ListSize()){
+            if(index <= 0){
+                InsertAtBeginning(newData);
+            }else if(index == ListSize()){
+                InsertAtLast(newData);
+            }else {
+                Node newNode = new Node(newData);
+                Node p = head;int count = 0;
+                while(count!=index-1){
+                    p = p.node;
+                    count++;
+                }
+                newNode.node = p.node;
+                p.node = newNode;
+            }
+        }else{
+            System.out.println("Out of Bound Index must fill index : "+ListSize());
         }
-        Node newNode = new Node(newData);
-        newNode.node = previous.node;
-        previous.node = newNode;
     }
     //Method to insert at the last
-    public void insertAtLast(int newData){
+    public void InsertAtLast(int newData){
         //head is null when there is no other node
         if(head == null){
             head = new Node(newData);
@@ -52,22 +108,85 @@ class LinkedList{
         last.node = newNode;
     }
     //Delete Node
-    
+    //Delete at First
+    public void DeleteFirstNode(){
+        Node value = head;
+        head = head.node;
+        value.node = null;
+    }
+    //Delete with any index
+    public void DeleteAtIndex(int index){
+        if(index <= ListSize()){
+            if(index <= 0){
+                DeleteFirstNode();
+            }else if(index == ListSize()){
+                DeleteLastNode();
+            }else {
+                Node value = head;
+                Node ForwardNode = head.node;
+                for(int i= 0 ;i<index-1;i++){
+                    value = value.node;
+                    ForwardNode = ForwardNode.node;
+                }
+                value.node = ForwardNode.node;
+                ForwardNode.node = null;
+            }
+        }else{
+            System.out.println("Out of Bound Index must fill index : "+ListSize());
+        }
+    }
+    //Delete at Last
+    public void DeleteLastNode() {
+        Node value = head;
+        Node ForwardValue = head.node;
+        while (ForwardValue.node!=null){
+            value = value.node;
+            ForwardValue = ForwardValue.node;
+        }
+        value.node = null;
+        ForwardValue.node = null;
+    }
+    //Delete with Value
+    public void DeleteWithValue(int value){
+        Node pointer = head;
+        Node ForwardPointer = head.node;
+        while (ForwardPointer.data != value && ForwardPointer.node!=null){
+            pointer = pointer.node;
+            ForwardPointer = ForwardPointer.node;
+        }
+        if(ForwardPointer.data == value){
+            pointer.node = ForwardPointer.node;
+            ForwardPointer.node = null;
+        }else{
+            System.out.println("Value Not Found");
+        }
+    }
+
 }
 
 public class linkList_implementaion_1 {
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
-        list.InsertAtBeginning(3);
-        list.InsertAtBeginning(3);
+        list.InsertAtBeginning(1);
+        list.InsertAtLast(2);
+        list.InsertAtLast(3);
+        list.InsertAtLast(4);
+        list.InsertAtLast(5);
+        list.InsertAtLast(6);
+
+//        System.out.println(list.ListSize());
+//        System.out.println(list.ListPeek());
+//        System.out.println(list.ListPeekLast());
+
+//        list.DeleteWithValue(7);
+//        list.DeleteFirstNode();
+//          list.DeleteAtIndex(6);
+//        list.DeleteLastNode();
+//        list.printList();
+        System.out.println(list.isEmpty());
+        System.out.println(list.isFull());
         list.printList();
-        list.insertAtLast(44);
-        list.printList();
-        list.InsertAtBeginning(6);
-        list.printList();
-        list.InsertList(list.head.node.node,7);
-        list.printList();
-        list.InsertList(list.head.node.node.node,7);
+        list.InsertList(2,6);
         list.printList();
     }
 }
