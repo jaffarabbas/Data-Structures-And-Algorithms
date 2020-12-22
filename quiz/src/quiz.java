@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-class Main {
+class quiz {
 
     // Rows and columns in the given grid
     static int R, C;
