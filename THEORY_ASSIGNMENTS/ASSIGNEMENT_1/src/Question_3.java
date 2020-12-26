@@ -1,4 +1,8 @@
-import java.util.List;
+import java.util.Random;
+import java.util.Scanner;
+
+/****************LinkedList****************/
+
 
 class LinkedList{
     public Node head;
@@ -198,18 +202,23 @@ class LinkedList{
     public void DeleteWithValue(int value){
         Node pointer = head;
         Node ForwardPointer = head.node;
-        while (ForwardPointer.data != value && ForwardPointer.node!=null){
-            pointer = pointer.node;
-            ForwardPointer = ForwardPointer.node;
-        }
-        if(ForwardPointer.data == value){
-            pointer.node = ForwardPointer.node;
-            ForwardPointer.node = null;
-        }else{
-            System.out.println("Value Not Found");
+        if(head.data == value){
+            System.out.println("Done");
+            DeleteFirstNode();
+        }else {
+            while (ForwardPointer.data != value && ForwardPointer.node != null) {
+                pointer = pointer.node;
+                ForwardPointer = ForwardPointer.node;
+            }
+            if (ForwardPointer.data == value) {
+                pointer.node = ForwardPointer.node;
+                ForwardPointer.node = null;
+            } else {
+                System.out.println("Value Not Found");
+            }
         }
     }
-    //Search index
+    //Search
     public int Search(int value){
         Node pointer = head;int count=0;
         while (pointer.data != value && pointer.node!=null){
@@ -235,37 +244,126 @@ class LinkedList{
             return 0;
         }
     }
+    //Sort a list
+    public void SortLinkedList(int numberOfNodes){
+        Node currentNode;
+        Node newNode;
+        int i,j;
+        int temp;
+        for(i=numberOfNodes-2;i>=0;i--){
+            currentNode = head;
+            newNode = currentNode.node;
+            for(j=0;j<=i;j++){
+                if(currentNode.data > newNode.data){
+                    temp = currentNode.data;
+                    currentNode.data = newNode.data;
+                    newNode.data = temp;
+                }
+                currentNode = newNode;
+                newNode = newNode.node;
+            }
+        }
+    }
+    //merge to list
+    public void MergeLinkedList(LinkedList list,LinkedList list2,LinkedList list3){
+          Node pointer = list.head;
+          while (pointer.node!=null){
+              pointer = pointer.node;
+          }
+          pointer.node = list2.head;
+          if(list3.head == null){
+              list3.head = list.head;
+          }
+    }
+    //count even odd nodes
+    public void CountEvenOdds(){
+        Node pointer = head;
+        int even=0,odd=0;
+        while (pointer.node!=null){
+            if(pointer.data%2==0){
+                even++;
+            }else{
+                odd++;
+            }
+            pointer = pointer.node;
+        }
+        System.out.println("Even : "+even+"\nOdd : "+odd);
+    }
 }
 
-public class LinkList_Implementation_1 {
-    public static void main(String[] args) {
+class test{
+    public test(){
+        System.out.println("***********Question3***********\n\n***********LinkedList***********\n\n");
         LinkedList list = new LinkedList();
-        list.InsertAtBeginning(1);
-        list.InsertAtLast(2);
-        list.InsertAtLast(3);
-        list.InsertAtLast(4);
-        list.InsertAtLast(5);
-        list.InsertAtLast(6);
+        LinkedList list2 = new LinkedList();
+        LinkedList mergedList = new LinkedList();
 
-//        System.out.println(list.ListSize());
-//        System.out.println(list.ListPeek());
-//        System.out.println(list.ListPeekLast());
-
-//        list.DeleteWithValue(7);
-//        list.DeleteFirstNode();
-//          list.DeleteAtIndex(6);
-//        list.DeleteLastNode();
-//        list.printList();
-//        System.out.println(list.isEmpty());
-//        System.out.println(list.isFull());
-//        list.printList();
-//    //    list.InsertList(2,6);
-//        list.UpdateFirstNode(4);
-//        list.UpdateLastNode(55);
-//        list.UpdateAtIndex(1,44444);
-//        list.UpdateByValue(2,4);
-//        list.DeleteWithValue(3);
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Number of Nodes");
+        int numberOfNode = scn.nextInt();
+        System.out.println("Enter list 1 elements : ");
+        for(int i = 0 ; i < numberOfNode ; ++i){
+            int num  =scn.nextInt();
+            list.InsertList(i,num);
+        }
+        System.out.println("Enter list 2 elements : ");
+        for(int i = 0 ; i < numberOfNode ; ++i){
+            int num  =scn.nextInt();
+            list2.InsertList(i,num);
+        }
+        System.out.println("List 1 : ");
         list.printList();
-        System.out.println(list.Search(99));
+        System.out.println("List 2 : ");
+        list2.printList();
+        //Sort
+        System.out.println("Sort Them individually");
+        list.SortLinkedList(numberOfNode);
+        list2.SortLinkedList(numberOfNode);
+        System.out.println("List 1 After Sorting: ");
+        list.printList();
+        System.out.println("List 2 After Sorting: ");
+        list2.printList();
+        System.out.println("Merge them : ");
+        mergedList.MergeLinkedList(list,list2,mergedList);
+        mergedList.printList();
+        System.out.println("Sort Them Again : ");
+        mergedList.SortLinkedList(numberOfNode*2);
+        mergedList.printList();
+        System.out.println("Enter 1)Display List\n2)Delete User define Value\n3)Search Define Value\n4)count Odd and Even nodes\n5)Exit");
+        while(true){
+            System.out.print("Enter Number : ");
+            int number = scn.nextInt();
+            switch (number){
+                case 1:
+                    mergedList.printList();
+                    break;
+                case 2:
+                    System.out.print("Enter Number : ");
+                    int num = scn.nextInt();
+                    mergedList.DeleteWithValue(num);
+                    break;
+                case 3:
+                    System.out.print("Enter Number : ");
+                    int num2 = scn.nextInt();
+                    System.out.println(mergedList.SearchValue(num2)+" At index : "+mergedList.Search(num2));
+                    break;
+                case 4:
+                    mergedList.CountEvenOdds();
+                    break;
+                default:
+                    System.out.println("Error!");
+                    break;
+            }
+            if(number == 5){
+                break;
+            }
+        }
+    }
+}
+
+
+public class Question_3 {
+    public static void main(String[] args) {
+        test obj = new test();
     }
 }
