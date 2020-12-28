@@ -39,7 +39,7 @@ public class quick_sort {
         }
     }
     static void test(){
-        int[] arr={4,8,3,1,6,7};
+        int[] arr={4,8,3,1,6,7,44,45,10,9,6};
         int size = arr.length-1;
         System.out.println("Unsorted!!");
         System.out.println(Arrays.toString(arr));

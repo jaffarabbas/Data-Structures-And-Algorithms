@@ -25,6 +25,7 @@ class ParenthesisMatch{
             }
         }
         if(value < 0){
+            int j=0;
             for(;left<=right;left++){
                 char character = string.charAt(left);
                 if(character!=Parenthesis[1]){

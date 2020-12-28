@@ -1,6 +1,6 @@
+import java.util.Random;
 import java.util.Scanner;
-
-
+/****************LinkedList****************/
 class LinkedList{
     public Node head;
     static class Node{
@@ -199,138 +199,60 @@ class LinkedList{
     public void DeleteWithValue(int value){
         Node pointer = head;
         Node ForwardPointer = head.node;
-        while (ForwardPointer.data != value && ForwardPointer.node!=null){
-            pointer = pointer.node;
-            ForwardPointer = ForwardPointer.node;
-        }
-        if(ForwardPointer.data == value){
-            pointer.node = ForwardPointer.node;
-            ForwardPointer.node = null;
-        }else{
-            System.out.println("Value Not Found");
-        }
-    }
-    //Search
-    public int Search(int value){
-        Node pointer = head;int count=0;
-        while (pointer.data != value && pointer.node!=null){
-            pointer = pointer.node;
-            count++;
-        }
-        if(pointer.data == value){
-            return count;
-        }else{
-            return 0;
-        }
-    }
-    //Search by index
-    public int SearchValue(int value){
-        Node pointer = head;int count=0;
-        while (pointer.data != value && pointer.node!=null){
-            pointer = pointer.node;
-            count++;
-        }
-        if(pointer.data == value){
-            return pointer.data;
-        }else{
-            return 0;
-        }
-    }
-    //Serch by Index
-    public int SerarchByIndex(int index){
-        if(index <= ListSize()){
-            if(index <= 0){
-                return ListPeekFirst();
-            }else if(index == ListSize()){
-                return ListPeekLast();
-            }else {
-                Node value = head;
-                Node ForwardNode = head.node;
-                for(int i= 0 ;i<index-1;i++){
-                    value = value.node;
-                    ForwardNode = ForwardNode.node;
-                }
-                return ForwardNode.data;
+        if(head.data == value){
+            System.out.println("Done");
+            DeleteFirstNode();
+        }else {
+            while (ForwardPointer.data != value && ForwardPointer.node != null) {
+                pointer = pointer.node;
+                ForwardPointer = ForwardPointer.node;
             }
-        }else{
-            System.out.println("Out of Bound Index must fill index : "+ListSize());
-            return 0;
-        }
-    }
-    //Sort a list
-    public void SortLinkedList(int numberOfNodes){
-        Node currentNode;
-        Node newNode;
-        int i,j;
-        int temp;
-        for(i=numberOfNodes-2;i>=0;i--){
-            currentNode = head;
-            newNode = currentNode.node;
-            for(j=0;j<=i;j++){
-                if(currentNode.data > newNode.data){
-                    temp = currentNode.data;
-                    currentNode.data = newNode.data;
-                    newNode.data = temp;
-                }
-                currentNode = newNode;
-                newNode = newNode.node;
+            if (ForwardPointer.data == value) {
+                pointer.node = ForwardPointer.node;
+                ForwardPointer.node = null;
+            } else {
+                System.out.println("Value Not Found");
             }
-        }
-    }
-    //merge to list
-    public void MergeLinkedList(LinkedList list,LinkedList list2,LinkedList link3){
-        Node pointerOfMerge = link3.head;
-        Node pointerOfList1 = list.head;
-        Node traverseMergetoList1 = pointerOfMerge;
-        Node pointerOfList2 = list2.head;
-        while (traverseMergetoList1.node!=null){
-            traverseMergetoList1 = traverseMergetoList1.node;
-        }
-        traverseMergetoList1.node = pointerOfList1;
-        while (traverseMergetoList1.node!=null){
-            traverseMergetoList1 = traverseMergetoList1.node;
-        }
-        traverseMergetoList1.node = pointerOfList2;
-    }
-
-    public void SwapAdjesunt(){
-        Node pointer = head;
-
-        /* Traverse only till there are atleast 2 nodes left */
-        while (pointer != null && pointer.node != null) {
-
-            /* Swap the data */
-            int temp = pointer.data;
-            pointer.data = pointer.node.data;
-            pointer.node.data = temp;
-            pointer = pointer.node.node;
         }
     }
 }
 
 class test{
-    void Test(){
-        System.out.println("***********Question4***********\n\n***********LinkedList***********\n\n");
-        LinkedList list = new LinkedList();
-
-        Scanner scn = new Scanner(System.in);
-        System.out.println("Number of Nodes");
-        int numberOfNode = scn.nextInt();
-        System.out.println("Enter list 1 elements : ");
-        for(int i = 0 ; i < numberOfNode ; ++i){
-            int num  =scn.nextInt();
-            list.InsertList(i,num);
-        }
-        System.out.println("List 1 : ");
-        list.printList();
-        list.SwapAdjesunt();
-        list.printList();
-    }
-}
-
-public class Question_4 {
     public static void main(String[] args) {
-        test obj = new test();
-        obj.Test();
+        Scanner scn = new Scanner(System.in);
+        LinkedList list = new LinkedList();
+        System.out.println("Enter \n1)Insert At Beginning\n2)Insert At Index\n3)Delete User define Value\n4)Display List\n5)Exit");
+        while(true){
+            System.out.print("Enter Number : ");
+            int number = scn.nextInt();
+            switch (number){
+                case 1:
+                    System.out.print("Enter Number : ");
+                    int num = scn.nextInt();
+                    list.InsertAtBeginning(num);
+                    break;
+                case 2:
+                    System.out.print("Enter Index : ");
+                    int index = scn.nextInt();
+                    System.out.print("Enter Number : ");
+                    int num2 = scn.nextInt();
+                    list.InsertList(index,num2);
+                    break;
+                case 3:
+                    System.out.print("Enter Number : ");
+                    int num3 = scn.nextInt();
+                    list.DeleteWithValue(num3);
+                    break;
+                case 4:
+                    list.printList();
+                    break;
+                default:
+                    System.out.println("Error!");
+                    break;
+            }
+            if(number == 5){
+                break;
+            }
+        }
     }
 }
