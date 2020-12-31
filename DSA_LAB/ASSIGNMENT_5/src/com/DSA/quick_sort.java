@@ -27,7 +27,10 @@ public class quick_sort {
         arr[i+1] = arr[high];
         arr[high] = temp;
 
-        flag = true;
+        flag = true;aqq
+        ]
+        ]
+        ]
         System.out.println("swap ("+arr[i+1]+","+arr[high]+" ) swap : "+flag+"\n");
         return i+1;
     }
