@@ -49,9 +49,68 @@ class InsertionSort{
 }
 
 class MergeSort{
-    int pivot
+    public static void merge(int[] arr,int low,int mid,int high){
+        int i,j,k;
+        i=low;k=low;j=mid+1;
+        int[] temp = new int[high+1];
+        while (i<=mid&&j<=high){
+            if(arr[i] < arr[j]){
+                temp[k] = arr[i];
+                i++;k++;
+            }else{
+                temp[k] = arr[j];
+                j++;k++;
+            }
+        }
+        while (i<=mid){
+            temp[k] = arr[i];
+            i++;k++;
+        }
+        while (j<=high){
+            temp[k] = arr[j];
+            j++;k++;
+        }
+        for(int loop=low;loop<=high;++loop){
+            arr[loop] = temp[loop];
+        }
+    }
+    public static void sort(int[] arr,int low,int high){
+        int mid;
+        if(low<high){
+            mid = (low+high)/2;
+            sort(arr,low,mid);
+            sort(arr,mid+1,high);
+            merge(arr,low,mid,high);
+        }
+    }
 }
 
+class QuickSort{
+     public static int partition(int[] arr,int low,int high){
+         int pivot = arr[high];
+         int i = (low-1);
+         int temp;
+         for (int j = low ; j<high ; ++j){
+             if(arr[j] < pivot){
+                 i++;
+                 temp = arr[j];
+                 arr[j] = arr[i];
+                 arr[i] = temp;
+             }
+         }
+         temp = arr[i+1] ;
+         arr[i+1] = arr[high];
+         arr[high] = temp;
+         return i+1;
+     }
+     public static void sort(int[] arr,int low,int high){
+         if(low < high){
+             int pivot  = partition(arr,low,high);
+             sort(arr,low,pivot-1);
+             sort(arr,pivot+1,high);
+         }
+     }
+}
 public class sortingAlgorithums {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -59,7 +118,9 @@ public class sortingAlgorithums {
         int[] arr = {5,4,3,1,2};
         //BubbleSort.sort(arr);
         //SelectionSort.sort(arr);
-        InsertionSort.sort(arr);
+        //InsertionSort.sort(arr);
+        //QuickSort.sort(arr,0,arr.length-1);
+        MergeSort.sort(arr,0, arr.length-1);
         System.out.println(Arrays.toString(arr));
     }
 }
