@@ -1,63 +1,63 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-class Queue{
-    public int rear,front;
+class Queue {
+    public int rear, front;
     public int[] queue;
-    public Queue(int size){
+    public Queue(int size) {
         rear = front = -1;
         queue = new int[size];
     }
 
     //inQueue
-    public void inQueue(int num){
-       if(!isFull()){
-           if(front == -1){front=0;}
-           rear++;
-           queue[rear] = num;
-       }else{
-           System.out.println("Can not enter in Queue");
-       }
+    public void inQueue(int num) {
+        if (!isFull()) {
+            if (front == -1) {front = 0;}
+            rear++;
+            queue[rear] = num;
+        } else {
+            System.out.println("Can not enter in Queue");
+        }
     }
 
     //deQueue
 
-    public int deQueue(){
-        int value=0;
-        if(!isEmpty()){
+    public int deQueue() {
+        int value = 0;
+        if (!isEmpty()) {
             front++;
             value = queue[front];
-        }else{
-            System.out.println("Empty : "+isEmpty());
+        } else {
+            System.out.println("Empty : " + isEmpty());
         }
         return value;
     }
 
     //print
-    public void print(){
-        if(!isEmpty()){
+    public void print() {
+        if (!isEmpty()) {
             System.out.print("[");
-            for(int i = front;i<=rear;i++){
-             //   System.out.println(front+"\n"+rear);
-                System.out.print(" "+ queue[i]);
+            for (int i = front; i <= rear; i++) {
+                //   System.out.println(front+"\n"+rear);
+                System.out.print(" " + queue[i]);
             }
             System.out.println(" ]");
-        }else{
-            System.out.println(front+"\n"+rear);
-            System.out.println("Empty : "+isEmpty());
+        } else {
+            System.out.println(front + "\n" + rear);
+            System.out.println("Empty : " + isEmpty());
         }
-        System.out.println(front+"\n"+rear);
+        System.out.println(front + "\n" + rear);
     }
     //size of a queue
-    public int size(){
+    public int size() {
         return rear - front;
     }
     //is empty
-    boolean isEmpty(){
+    boolean isEmpty() {
         return front < 0 && rear < 0 && size() < 0;
     }
     //is full
-    boolean isFull(){
+    boolean isFull() {
         return front == 0 && rear == size();
     }
 }
@@ -117,7 +117,7 @@ public class Queue_implementation_1 {
 
         System.out.println(queue.size());
         queue.print();
-        System.out.println("Is Full : "+queue.isFull());
+        System.out.println("Is Full : " + queue.isFull());
 //        System.out.println("Deque: "+queue.deQueue());
 //        queue.print();
 //        System.out.println("Size : "+queue.size());
