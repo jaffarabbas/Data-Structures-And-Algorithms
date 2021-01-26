@@ -27,10 +27,8 @@ public class quick_sort {
         arr[i+1] = arr[high];
         arr[high] = temp;
 
-        flag = true;aqq
-        ]
-        ]
-        ]
+        flag = true;
+
         System.out.println("swap ("+arr[i+1]+","+arr[high]+" ) swap : "+flag+"\n");
         return i+1;
     }
@@ -42,7 +40,7 @@ public class quick_sort {
         }
     }
     static void test(){
-        int[] arr={4,8,3,1,6,7,44,45,10,9,6};
+        int[] arr={1,99,100,20,40,60,80,10,11,15};
         int size = arr.length-1;
         System.out.println("Unsorted!!");
         System.out.println(Arrays.toString(arr));

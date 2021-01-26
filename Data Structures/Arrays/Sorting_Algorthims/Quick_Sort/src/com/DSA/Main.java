@@ -61,7 +61,7 @@ public class Main {
 
     // Driver program
     public static void main(String args[]) {
-        int arr[] = {10, 7, 8, 9, 1, 5};
+        int arr[] = {1,99,100,20,40,60,80,10,11,15};
         int n = arr.length;
 
         Main ob = new Main();

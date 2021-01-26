@@ -1,6 +1,5 @@
 
 
-
 class sol1{
     int partition(int[] arr,int low,int high){
         int pivot = arr[low];
@@ -69,7 +68,7 @@ class sol2{
         }
     }
      void test(){
-        int arr1[] = {4,8,3,1,6,7};
+        int arr1[] ={1,99,100,20,40,60,80,10,11,15};
 
         sort(arr1,0,arr1.length-1);
         // merge(arr1,0,2,4);
