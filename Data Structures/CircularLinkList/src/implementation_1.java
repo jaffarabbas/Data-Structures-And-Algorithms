@@ -5,7 +5,7 @@ class LinkedList{
         Node node;
         int data;
         Node(){
-            
+
         }
     }
 }

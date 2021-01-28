@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="84c9b655-a14a-4c49-8fa1-f5027ab21853" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arrays/Sorting_Algorthims/merge_sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Arrays/Sorting_Algorthims/merge_sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Structures/CircularLinkList/src/implementation_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data Structures/CircularLinkList/src/implementation_1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +20,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -29,17 +30,6 @@
       <option name="MAIN_CLASS_NAME" value="com.dsacracker.q1_reverse_Array" />
       <module name="Arrays" />
       <option name="VM_PARAMETERS" value="$MAVEN_REPOSITORY$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -56,6 +46,7 @@
       <workItem from="1603187278600" duration="113000" />
       <workItem from="1604824057233" duration="234000" />
       <workItem from="1604836544038" duration="571000" />
+      <workItem from="1611831408958" duration="1269000" />
     </task>
     <servers />
   </component>
