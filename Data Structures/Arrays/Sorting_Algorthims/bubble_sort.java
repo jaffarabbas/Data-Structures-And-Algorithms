@@ -31,10 +31,11 @@ public class bubble_sort {
     public static void main(String[] args) {
         System.out.println("Bubble");
         Bubble sort = new Bubble();
-        int arr[] = {0,1,2,3,4,5,6,7,8,42,24,6,17,30,13,90,47,2};
+        int arr[] = {10,5,3,2,1,4,6,7};
         for(int num:arr){
-            System.out.println("Ansorted arry: "+num);
+            System.out.print(" "+num);
         }
+        System.out.println("");
         sort.sort(arr, arr.length);
         for(int num:arr){
             System.out.print(" "+num);
