@@ -41,7 +41,7 @@ class Slection{
                 if(arr[j] < arr[min]){//0,1,   5>4 , 1 > 2 4 > nm
                     min = j;// min =1, j=1
                     flag = true;
-                    System.out.println("j: "+j+" --> "+Arrays.toString(arr)+" swap-> ( "+arr[min]+">"+arr[j]+" )"+flag);  
+                    System.out.println("j: "+j+" --> "+Arrays.toString(arr)+" ( "+arr[min]+">"+arr[j]+" ) min : "+min+" "+flag);  
                     flag = false;
                 }
             }
@@ -49,7 +49,7 @@ class Slection{
             arr[min] = arr[i];
             arr[i] = temp;
             flag = true;
-            System.out.println("j: "+j+"          -->           "+Arrays.toString(arr)+" swap->( "+arr[min]+" , "+arr[i]+" )"+flag);  
+            System.out.println(Arrays.toString(arr)+" swap->( "+arr[min]+" , "+arr[i]+" )"+flag);  
             flag = false;
         }
     }
@@ -57,7 +57,7 @@ class Slection{
 public class Selection_sort {
     public static void main(String[] args) {
         Slection sort = new Slection();
-        int arr[] =  {10,5,3,2,1,4,6,7};
+        int arr[] =  {10,50,2,1,11,6,5,7};
         for(int num:arr){
             System.out.println("Ansorted arry: "+num);
         }
