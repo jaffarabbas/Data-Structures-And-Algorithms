@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84c9b655-a14a-4c49-8fa1-f5027ab21853" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data Structures/CircularLinkList/src/implementation_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data Structures/CircularLinkList/src/implementation_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Structures/Arrays/Sorting_Algorthims/Selection_sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data Structures/Arrays/Sorting_Algorthims/Selection_sort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Structures/Arrays/Sorting_Algorthims/Selection_sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data Structures/Arrays/Sorting_Algorthims/Selection_sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Structures/Arrays/Sorting_Algorthims/Slection.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data Structures/Arrays/Sorting_Algorthims/Slection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Structures/Arrays/Sorting_Algorthims/insertion_sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data Structures/Arrays/Sorting_Algorthims/insertion_sort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +25,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaFX-Library-Management-Information-System" />
   </component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
@@ -47,52 +49,11 @@
       <workItem from="1604824057233" duration="234000" />
       <workItem from="1604836544038" duration="571000" />
       <workItem from="1611831408958" duration="1269000" />
+      <workItem from="1612040350362" duration="54000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="137" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604824245374">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="137" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1604824245374" />
-    <state x="469" y="69" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1604824260301">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="469" y="69" key="#com.intellij.ide.macro.MacrosDialog/0.0.1366.728@0.0.1366.728" timestamp="1604824260301" />
-    <state x="419" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1604824241726">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="419" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1604824241726" />
-    <state x="557" y="114" key="EnvironmentVariablesDialog" timestamp="1604824264364">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="557" y="114" key="EnvironmentVariablesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604824264364" />
-    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1604837116778">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604837116778" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1604824292757">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604824292757" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1604824292757">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1604824292757" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1604824292757">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1604824292757" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1604824292757">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1604824292757" />
-    <state x="274" y="0" key="new project wizard" timestamp="1604837134109">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="274" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1604837134109" />
   </component>
 </project>
