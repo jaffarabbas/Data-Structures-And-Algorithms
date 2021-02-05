@@ -57,7 +57,7 @@ class Slection{
 public class Selection_sort {
     public static void main(String[] args) {
         Slection sort = new Slection();
-        int arr[] =  {10,50,2,1,11,6,9,7};
+        int arr[] =  {10,50,77,1,11,6,9,7};
         for(int num:arr){
             System.out.println("Ansorted arry: "+num);
         }
