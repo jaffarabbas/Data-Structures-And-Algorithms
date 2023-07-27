@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DARKLORD\\Documents\\DSA\\DSA\\DSA.csproj",
+      "projectUniqueName": "J:\\GitHub\\Data-Structures-And-Algorithms-\\DSA\\DSA\\DSA.csproj",
       "projectName": "DSA",
-      "projectPath": "C:\\Users\\DARKLORD\\Documents\\DSA\\DSA\\DSA.csproj",
+      "projectPath": "J:\\GitHub\\Data-Structures-And-Algorithms-\\DSA\\DSA\\DSA.csproj",
       "packagesPath": "C:\\Users\\DARKLORD\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DARKLORD\\Documents\\DSA\\DSA\\obj\\",
+      "outputPath": "J:\\GitHub\\Data-Structures-And-Algorithms-\\DSA\\DSA\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DARKLORD\\AppData\\Roaming\\NuGet\\NuGet.Config",
