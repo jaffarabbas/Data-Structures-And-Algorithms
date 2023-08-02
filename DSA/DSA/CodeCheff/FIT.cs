@@ -16,6 +16,7 @@ namespace DSA.CodeCheff
                 int x = Convert.ToInt32(Console.ReadLine());
                 int totalKm = x * 2;
                 int f = totalKm * 5;
+                Console.WriteLine(f);
                 t--;
             }
         }
