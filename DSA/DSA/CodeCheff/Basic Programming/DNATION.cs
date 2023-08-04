@@ -8,5 +8,18 @@ namespace DSA.CodeCheff.Basic_Programming
 {
     internal class DNATION
     {
+        public static void func()
+        {
+            int a = int.Parse(Console.ReadLine());
+            while (a > 0)
+            {
+                string[] lines = Console.ReadLine().Split(' ');
+                int x = int.Parse(lines[0]);
+                int y = int.Parse(lines[1]);
+                int f = y - x;
+                Console.WriteLine(f);
+                a--;
+            }
+        }
     }
 }
