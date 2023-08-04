@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSA.CodeCheff.Basic_Programming
 {
-    internal class AGEING
+    internal class SUBSCRIBE
     {
         public static void func()
         {
@@ -14,8 +14,14 @@ namespace DSA.CodeCheff.Basic_Programming
             while (a > 0)
             {
                 int x = int.Parse(Console.ReadLine());
-                int f = x - 10;
-                Console.WriteLine(f);
+                if (x > 30)
+                {
+                    Console.WriteLine("YES");
+                }
+                else
+                {
+                    Console.WriteLine("NO");
+                }
                 a--;
             }
         }

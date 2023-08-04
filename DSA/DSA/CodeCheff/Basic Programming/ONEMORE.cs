@@ -6,16 +6,24 @@ using System.Threading.Tasks;
 
 namespace DSA.CodeCheff.Basic_Programming
 {
-    internal class AGEING
+    internal class ONEMORE
     {
         public static void func()
         {
             int a = int.Parse(Console.ReadLine());
             while (a > 0)
             {
+
                 int x = int.Parse(Console.ReadLine());
-                int f = x - 10;
-                Console.WriteLine(f);
+
+                if (x>24)
+                {
+                    Console.WriteLine("YES");
+                }
+                else
+                {
+                    Console.WriteLine("NO");
+                }
                 a--;
             }
         }

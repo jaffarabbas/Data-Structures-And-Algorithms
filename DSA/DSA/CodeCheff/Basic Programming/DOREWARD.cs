@@ -6,16 +6,27 @@ using System.Threading.Tasks;
 
 namespace DSA.CodeCheff.Basic_Programming
 {
-    internal class AGEING
+    internal class DOREWARD
     {
         public static void func()
         {
             int a = int.Parse(Console.ReadLine());
             while (a > 0)
             {
+
                 int x = int.Parse(Console.ReadLine());
-                int f = x - 10;
-                Console.WriteLine(f);
+
+                if (x <= 3)
+                {
+                    Console.WriteLine("BRONZE");
+                }
+                else if(x > 3 && x <= 6)
+                {
+                    Console.WriteLine("SILVER");
+                }else if(x > 6)
+                {
+                    Console.WriteLine("GOLD");
+                }
                 a--;
             }
         }
